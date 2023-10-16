@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invoice</title>
+    <style>
+       .container {  
+            padding: 50px;  
+          background-color: lightblue;  
+        }  
+
+        body{  
+          font-family: Calibri, Helvetica, sans-serif;  
+          background-color: pink;  
+        }  
+
+        input[type=text], input[type=password], textarea {  
+          width: 100%;  
+          padding: 15px;  
+          margin: 5px 0 22px 0;  
+          display: inline-block;  
+          border: none;  
+          background: #f1f1f1;  
+        }  
+
+        div {  
+                    padding: 10px 0;  
+                 }  
+        hr {  
+          border: 1px solid #f1f1f1;  
+          margin-bottom: 25px;  
+        }  
+
+
+        .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        }
+
+        .button1 {background-color: rgb(236, 182, 236);} 
+        .button2 {background-color: #008CBA;
+                          float: right;      
+        }
+        </style>
+</head>
+
+<body>
+    
+        <form>
+            <div class="container">
+
+                <h1>CreateInvoice</h1>
+                <hr>
+            
+            <h2>Invoice Details</h2>
+
+            <label>Select Vendors*</label><br><br>
+                <select required>
+                    <option value="select">Select Vendors</option>
+                    <option value="card">Credit card</option>
+                    <option value="wire">Wire Transfer</option>
+                    <option value="virtual">Virtual Card</option>
+
+           
+            </select><br><br>
+
+
+            <label>Bill Invoice Type*</label> <br><br>
+
+                <select required>
+                    <option value="performa">Performa Invoice</option>
+                    <option value="sales">Sales Invoice</option>
+                    <option value="overdue">Overdue Invoice</option>
+ 
+               
+           </select><br><br>
+
+           <label>Descriptions*</label> <br>
+           <input type="text" placeholder=" Enter Some Descriptions" name="Descriptions" id="Descriptions" required></input>
+            
+
+           <label>HSN Code*</label> <br>
+           <input type="text"  name="hsn code" id="hsn code" required></input>
+
+           <label>Invoice No*</label> <br>
+           <input type="text"  name="invoice no" id="invoice no" required></input>
+
+           <h2>Invoice Calculations Details</h2>
+
+           <label>Invoice Amount*</label> <br>
+           <input type="text" placeholder="Rs" name="hsn code" id="hsn code" required></input>
+
+           <label>SGST*</label> <br>
+           <input type="text" placeholder="%" name="sgst" id="sgst" required></input>
+
+           <label>TDS*</label> <br>
+           <input type="text" placeholder="%" name="tds" id="tds" required></input>
+
+           <label>PO Number*</label> <br>
+           <input type="text" name="po number" id="po number" required></input>
+
+
+           <label>Due Date*</label> <br>
+           <input type="text" name="po number" id="po number" required></input>
+
+           <label>Upload Invoice*</label> <br>
+           <input type="file" id="upload invoice" name="upload invoice"><br><br>
+
+           <label>CGST*</label> <br>
+           <input type="text" placeholder="%" name="cgst" id="cgst" required></input>
+
+           <label>IGST*</label> <br>
+           <input type="text" placeholder="%" name="igst" id="igst" required></input>
+
+           <label>Total Amount*</label> <br>
+           <input type="text" placeholder="Rs" name="total amount" id="total amount" required></input>
+
+             
+           <button type="button" class="invoice button1">CreateInvoice</button>
+           <button type="button" class="reset button2">Reset</button>
+
+
+
+           
+        </form>
+    </div>
+</body>
+
+</html>

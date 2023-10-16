@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vendors</title>
+
+    <style>
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /*.Details {
+            background-color: rgb(236, 182, 236);
+            float: right;
+        }
+
+        .button2 {
+            background-color: #008CBA;
+        }
+        **/
+        .cin{
+            background-color: #008CBA;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+
+            <h1>Add Vendors</h1>
+            <hr>
+
+            <h2>Vendor Details</h2>
+
+
+
+            <label>GSTIN*</label> <br>
+            <input type="text" placeholder="Enter GSTIN" name="gstin" id="gstin"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required></input><br>
+
+
+            <label>Legal Name*</label> <br>
+            <input type="text" name="legal name" id="legal name" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)"
+                required></input><br>
+
+            <label>Branch*</label> <br>
+            <select required>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="CIVIL">CIVIL</option>
+
+
+            </select><br><br>
+
+
+            <label>V Code</label> <br>
+            <input type="text" placeholder=" " name="v code" id="v code" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                required></input>
+            <label>V Code Must be AlphaNumeric</label> <br>
+
+
+
+            <h2>User Details</h2><br><br>
+
+            <hr>
+            <label>UserName*</label> <br>
+            <input type="text" placeholder=" " name="user name" id="user name"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required></input>
+
+            <label>Email ID*</label> <br>
+            <input type="text" placeholder=" " name="email" id="email id"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required></input>
+
+            <label>GST Status*</label> <br>
+            <input type="text" name="gst status" id="gst status" required></input>
+
+
+            <label>PAN NO*</label> <br>
+            <input type="text" name="pan no" id="pan no" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                required></input>
+
+            <label>CIN*</label> <br><br>
+            <input type="text" name="cin" id="cin" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required></input><br>
+            <button type="submit" class="Validate cin" formnovalidate>Validate CIN</button><br>
+
+
+
+            <label>Vendors Type*</label> <br>
+            <select required>
+                <option>Select Vendors Type</option>
+                <option value="B2C">B2C-Business To Consumer</option>
+                <option value="B2G">B2G-Business To Government</option>
+                <option value="B2B">B2B-Business To Business</option>
+            </select><br>
+
+            <label>Contact Person*</label> <br>
+            <input type="text" placeholder="-" name="contact" id="contact"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required></input>
+
+            <label>Mobile Number*</label> <br>
+            <input type="tel" placeholder="-" name="mobile" id="mobile" value="+91" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                required></input><br><br>
+
+
+           
+
+    </form>
+    </div>
+</body>
+
+</html>
